@@ -1,7 +1,7 @@
-package DTO;
+package minibankapi.demo.DTO;
 
 
-import entity.Customer;
+import minibankapi.demo.entity.Customer;
 
 import java.time.LocalDateTime;
 

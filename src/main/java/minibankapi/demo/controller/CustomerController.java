@@ -1,26 +1,23 @@
-package controller;
+package minibankapi.demo.controller;
 
-import DTO.CustomerRequest;
-import DTO.CustomerResponse;
 import jakarta.validation.Valid;
 import java.util.List;
-
-import bussinesslogic.CustomerService;
-
+import minibankapi.demo.DTO.CustomerRequest;
+import minibankapi.demo.DTO.CustomerResponse;
+import minibankapi.demo.bussinesslogic.CustomerService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/customers")
-public class HealthController {
-
+public class CustomerController {
 
     private final CustomerService service;
 
-    public HealthController(CustomerService service) {
+    public CustomerController(CustomerService service) {
         this.service = service;
-    }
 
+    }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
@@ -50,3 +47,10 @@ public class HealthController {
         service.delete(id);
     }
 }
+
+
+
+
+
+
+

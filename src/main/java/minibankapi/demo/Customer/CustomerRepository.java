@@ -1,6 +1,6 @@
-package Repository.Customer;
+package minibankapi.demo.Customer;
 
-import entity.Customer;
+import minibankapi.demo.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CustomerRepository extends JpaRepository<Customer, Long> {

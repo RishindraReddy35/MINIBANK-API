@@ -1,4 +1,4 @@
-package entity;
+package minibankapi.demo.entity;
 
 import jakarta.persistence.*;
 

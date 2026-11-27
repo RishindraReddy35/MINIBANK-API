@@ -1,12 +1,12 @@
-package bussinesslogic;
+package minibankapi.demo.bussinesslogic;
 
-import DTO.CustomerRequest;
-import DTO.CustomerResponse;
-import Exception.ResourceNotFoundException;
+import minibankapi.demo.DTO.CustomerRequest;
+import minibankapi.demo.DTO.CustomerResponse;
+import minibankapi.demo.Exception.ResourceNotFoundException;
 import java.util.List;
 
-import Repository.Customer.CustomerRepository;
-import entity.Customer;
+import minibankapi.demo.Customer.CustomerRepository;
+import minibankapi.demo.entity.Customer;
 
 import org.springframework.transaction.annotation.Transactional;
 
